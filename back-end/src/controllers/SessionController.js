@@ -15,6 +15,6 @@ module.exports = {
             })
         }
         
-        return res.json({ status: 'success', data: { ong } })
+        return res.json({ ong })
     }
 }

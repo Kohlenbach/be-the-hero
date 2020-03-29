@@ -7,6 +7,6 @@ module.exports = {
             .where('ong_id', ongId)
             .select('*')
 
-        return res.json({ status: 'success', data: { incidents } })
+        return res.json({ incidents })
     }
 }

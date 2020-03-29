@@ -5,7 +5,7 @@ module.exports = {
     async index(req, res) {
         const ongs = await dbConnection('ongs').select('*')
         
-        return res.json({ status: 'Success', data: { ongs } })
+        return res.json({ ongs })
     },
 
     async store(req, res) {
@@ -16,6 +16,6 @@ module.exports = {
             id, name, email, whatsapp, city, uf
         })
         
-        return res.json({ status: 'Success', data: { id } })
+        return res.json({ id })
     }
 }

@@ -19,7 +19,7 @@ module.exports = {
 
         res.header('X-Total-Count', count['count(*)'])
         
-        return res.json({ status: 'success', data: { incidents } }) 
+        return res.json({ incidents }) 
     },
 
     async store(req, res) {
@@ -29,7 +29,7 @@ module.exports = {
             title, description, value, ong_id: ongId,
         })
 
-        return res.json({ status: 'success', data: { id } })
+        return res.json({ id })
     },
 
     async delete(req, res) {
