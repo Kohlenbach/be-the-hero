@@ -8,3 +8,11 @@ A simple project provide by **RocketSeat** Omnistack 11, a **web** and **mobile*
 - Node
 - Express
 - Knex
+
+
+### How to run
+
+**Back-end**
+
+`yarn start` to start
+`yarn dev` to start with watch
