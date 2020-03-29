@@ -2,7 +2,7 @@
 
 A simple project provide by **RocketSeat** Omnistack 11, a **web** and **mobile** aplication that contain login & register, pagination, and more.
 
-### What's its used
+## What's its used
 
 **Back-end**
 - Node
@@ -10,7 +10,7 @@ A simple project provide by **RocketSeat** Omnistack 11, a **web** and **mobile*
 - Knex
 
 
-### How to run
+## How to run
 
 **Back-end**
 
@@ -19,7 +19,7 @@ A simple project provide by **RocketSeat** Omnistack 11, a **web** and **mobile*
 `yarn dev`: to start with watch
 
 
-### What I Learn
+## What I Learn
 
 - Pagination gived to back-end
 - Comum name to response header data
