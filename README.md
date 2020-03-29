@@ -14,5 +14,12 @@ A simple project provide by **RocketSeat** Omnistack 11, a **web** and **mobile*
 
 **Back-end**
 
-`yarn start` to start
-`yarn dev` to start with watch
+`yarn start`: to start
+
+`yarn dev`: to start with watch
+
+
+### What I Learn
+
+- Pagination gived to back-end
+- Comum name to response header data
