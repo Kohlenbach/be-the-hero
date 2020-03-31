@@ -1,8 +1,10 @@
-const routes = require('express').Router()
-const OngController = require('./controllers/OngController')
-const IncidentController = require('./controllers/IncidentController')
-const ProfileController = require('./controllers/ProfileController')
-const SessionController = require('./controllers/SessionController')
+import express from 'express'
+import OngController from './controllers/OngController'
+import IncidentController from './controllers/IncidentController'
+import ProfileController from './controllers/ProfileController'
+import SessionController from './controllers/SessionController'
+
+const routes = express.Router()
 
 routes.post('/sessions', SessionController.create)
 

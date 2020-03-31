@@ -1,7 +1,8 @@
-const dbConnection = require('../database/connection')
+import dbConnection from '../database/connection'
+import { Request, Response } from 'express'
 
-module.exports = {
-    async index(req, res) {
+export default {
+    async index(req: Request, res: Response): Promise<Response> {
         const ongId = req.headers.authorization
         const incidents = await dbConnection('incidents')
             .where('ong_id', ongId)

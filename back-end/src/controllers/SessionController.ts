@@ -1,7 +1,8 @@
-const dbConnection = require('../database/connection')
+import dbConnection from '../database/connection'
+import { Request, Response } from 'express'
 
-module.exports = {
-    async create(req, res) {
+export default {
+    async create(req: Request, res: Response): Promise<Response> {
         const { id } = req.body
         const ong = await dbConnection('ongs')
             .where('id', id)

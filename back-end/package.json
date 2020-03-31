@@ -6,7 +6,7 @@
   "author": "Lukas <kohle.lukas@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "tsc && node build/server.js",
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
@@ -16,6 +16,10 @@
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "@types/express": "^4.17.4",
+    "@types/node": "^13.9.8",
+    "nodemon": "^2.0.2",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
   }
 }

@@ -1,7 +1,8 @@
-const dbConnection = require('../database/connection')
+import dbConnection from '../database/connection'
+import { Request, Response } from 'express'
 
-module.exports = {
-    async index(req, res) {
+export default {
+    async index(req: Request, res: Response): Promise<Response> {
         const { page = 1 } = req.query
         const [count] = await dbConnection('incidents').count()
         const incidents = await dbConnection('incidents')
@@ -22,7 +23,7 @@ module.exports = {
         return res.json({ incidents }) 
     },
 
-    async store(req, res) {
+    async store(req: Request, res: Response): Promise<Response> {
         const { title, description, value } = req.body
         const ongId = req.headers.authorization
         const [id] = await dbConnection('incidents').insert({
@@ -32,7 +33,7 @@ module.exports = {
         return res.json({ id })
     },
 
-    async delete(req, res) {
+    async delete(req: Request, res: Response): Promise<Response> {
         const { id } = req.params
         const ongId = req.headers.authorization
         const incident = await dbConnection('incidents')
